@@ -1,72 +1,55 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2299.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; -webkit-text-stroke: #000000; min-height: 14.0px}
-    span.s1 {font-kerning: none}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>from dookie</title>
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta charset="UTF-8"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;title&gt;from dookie&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;h1&gt;Will you be my Valentine?&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button id="yesButton" class="button button-yes" style="font-size: 16px;"&gt;Yes&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>&lt;button id="noButton" class="button button-no"&gt;No&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">&lt;script&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>let noCount = 0;</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>function handleNoClick() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const phrases = [</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"No",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Are you sure?",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Really sure?",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Think again!",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Last chance!",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“But why?”,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"You will regret this!",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“I’M GONNA COME FOR YOU!”,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“Pook pook please?”,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“HOW COULD YOU DO THIS TO ME!”,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>"Have a heart!",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“After all we’ve been through!”,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“Please please please?”,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“ETHAN GENE ROGERS!”,</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“That can’t be your final answer?",</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>“I’ll give you a kiss ;*”</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>];</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const noButton = document.getElementById('noButton');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>noButton.textContent = phrases[Math.min(noCount, phrases.length - 1)];</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>noCount++;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>}</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('noButton').addEventListener('click', handleNoClick);</span></p>
-<p class="p2"><span class="s1"></span><br></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>document.getElementById('yesButton').addEventListener('click', function() {</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>const flexContainer = document.querySelector('div');</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>flexContainer.innerHTML = `</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Kissing bear"&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">            </span>&lt;div class="text-4xl font-bold my-4"&gt;Ok yay!!!&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">        </span>`;</span></p>
-<p class="p1"><span class="s1"><span class="Apple-converted-space">    </span>});</span></p>
-<p class="p1"><span class="s1">&lt;/script&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/html&gt;</span></p>
+<div>
+    <h1>Will you be my Valentine?</h1>
+    <div>
+        <button id="yesButton" class="button button-yes" style="font-size: 16px;">Yes</button>
+        <button id="noButton" class="button button-no">No</button>
+    </div>
+</div>
+<script>
+    let noCount = 0;
+
+    function handleNoClick() {
+        const phrases = [
+            "No",
+            "Are you sure?",
+            "Really sure?",
+            "Think again!",
+            "Last chance!",
+            “But why?”,
+            "You will regret this!",
+            “I’M GONNA COME FOR YOU!”,
+            “Pook pook please?”,
+            “HOW COULD YOU DO THIS TO ME!”,
+            "Have a heart!",
+            “After all we’ve been through!”,
+            “Please please please?”,
+            “ETHAN GENE ROGERS!”,
+            “That can’t be your final answer?",
+            “I’ll give you a kiss ;*”
+        ];
+
+        const noButton = document.getElementById('noButton');
+        noButton.textContent = phrases[Math.min(noCount, phrases.length - 1)];
+        noCount++;
+    }
+
+    document.getElementById('noButton').addEventListener('click', handleNoClick);
+
+    document.getElementById('yesButton').addEventListener('click', function() {
+        const flexContainer = document.querySelector('div');
+        flexContainer.innerHTML = `
+            <img src="https://media.tenor.com/gUiu1zyxfzYAAAAi/bear-kiss-bear-kisses.gif" alt="Kissing bear">
+            <div class="text-4xl font-bold my-4">Ok yay!!!</div>
+        `;
+    });
+</script>
 </body>
 </html>
